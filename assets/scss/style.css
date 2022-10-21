@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(../fonts/HelveticaNeueCyr-Roman.ttf);
+  font-weight: 400;
+}
+body {
+  font-family: HelveticaNeue;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 16px;
+}
+.link_white {
+  color: #FFF;
+}
+.link_gray {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFF;
+}
+
+.text {
+  font-size: 24px;
+  line-height: 28px;
+}
+.text_white {
+  color: #FFF;
+}
+.text_gray {
+  color: #435766;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFF;
+  border-radius: 4px;
+}
+.btn_green {
+  background: #8DD83D;
+}
+.btn_gray {
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+}
+
+.xbox_1 {
+  padding: 0px 165px;
+  height: 60px;
+  background: #373A3C;
+  border-radius: 4px;
+}
+.xbox_1__menu {
+  display: flex;
+}
+.xbox_1__wrap {
+  padding: 11px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.xbox_1__logo {
+  height: 29px;
+}
+.xbox_1__logo img {
+  width: 100%;
+  height: 100%;
+}
+.xbox_1__list {
+  display: flex;
+  align-items: center;
+}
+.xbox_1__item:not(:last-of-type) {
+  margin-right: 25px;
+}
+.xbox_1__input {
+  padding: 9px 0px 8px 16px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+}
+.xbox_1__link {
+  display: flex;
+  align-items: center;
+}
+.xbox_1__link_arrow::after {
+  content: "";
+  background: url("../img/down-arrow.svg") no-repeat center center/cover;
+  display: block;
+  height: 7px;
+  width: 12px;
+  margin-left: 7px;
+}
+
+.star {
+  background: url("../img/Star-Wars-Battlefront-II-combat.jpg") no-repeat center center/cover;
+}
+.star__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.star__arrow {
+  width: 135px;
+  height: 644px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star__block {
+  margin: 210px -565px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.star__ghost {
+  height: 95px;
+}
+.star__btn {
+  padding: 8px 24px 9px 19px;
+}
+.star__btn:not(:last-of-type) {
+  margin-right: 13px;
+}
+
+.xbox_2 {
+  background: url("../img/Rectangle_2.jpg") no-repeat center center/cover;
+}
+.xbox_2__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 162px;
+}
+.xbox_2__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.xbox_2__texts {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.xbox_2__title_center {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 56px;
+}
+.xbox_2__text_center {
+  display: flex;
+  justify-content: center;
+}
+.xbox_2__carts {
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-around;
+}
+.xbox_2__cart {
+  background-color: #FFF;
+  width: 318px;
+  height: 418px;
+  border: 1px solid #8DD83D;
+  border-radius: 4px;
+}
+.xbox_2__cart_left {
+  width: 279px;
+}
+.xbox_2__cart_hover {
+  width: 350px;
+  height: 460px;
+}
+.xbox_2__img {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xbox_2__img_left {
+  justify-content: flex-start;
+}
+.xbox_2__img_hover {
+  height: 198px;
+}
+.xbox_2__img img {
+  border-radius: 4px;
+}
+.xbox_2__preblock {
+  margin-left: 22px;
+}
+.xbox_2__pretitle {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.xbox_2__text {
+  margin-top: 13px;
+  margin-bottom: 57px;
+  min-height: 73px;
+}
+.xbox_2__btn_one {
+  padding: 19px 23px 20px 23px;
+}
+.xbox_2__btn_two {
+  padding: 19px 64px 20px 64px;
+}
+.xbox_2__btn_three {
+  padding: 19px 80px 20px 80px;
+}
+
+.games {
+  background: url("../img/Rectangle_1.jpg") no-repeat center center/cover;
+}
+.games__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.games__title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 97px;
+  margin-bottom: 28px;
+}
+.games__title::after {
+  content: "";
+  background: url("../img/icon-next.svg") no-repeat center center/cover;
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin-left: 435px;
+  align-items: center;
+}
+.games__carts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 69px;
+}
+.games_cart {
+  margin-left: 30px;
+}
+.games__btn_cart {
+  padding: 19px 98px 20px 98px;
+}
+.games__btn_left {
+  padding: 19px 78px 20px 98px;
+}
+.games__btn_hover {
+  padding: 22px 108px;
+  margin-left: 6px;
+}
+.games__text {
+  margin-bottom: 70px;
+}
+.games__btn {
+  display: flex;
+  justify-content: center;
+  padding: 11px 47px 21px 47px;
+  margin-bottom: 161px;
+}
+.games__button {
+  display: flex;
+  justify-content: center;
+}
+
+.design_lab {
+  background: url("../img/Rectangle_3.jpg") no-repeat center center/cover;
+}
+.design_lab__block {
+  max-width: 533px;
+  margin-left: 100px;
+}
+.design_lab__title {
+  padding: 114px 0px 9px 0px;
+  justify-content: flex-start;
+}
+.design_lab__text {
+  margin-bottom: 37px;
+}
+.design_lab__btns {
+  padding-bottom: 145px;
+}
+.design_lab__btn_one {
+  padding: 20px 31px 19px 52px;
+  margin-right: 15px;
+}
+.design_lab__btn_two {
+  padding: 20px 23px;
+}
+
+.developers {
+  background: #373A3C;
+}
+.developers__row {
+  display: flex;
+}
+.developers__column {
+  display: flex;
+  flex-direction: column;
+}
+.developers__item {
+  padding: 30px 20px;
+}
+.developers__text {
+  padding: 30px 20px;
+}
+.developers__title {
+  color: #7DD42F;
+  font-size: 18px;
+  line-height: 21px;
+}
+.developers__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.developers_gramm {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}/*# sourceMappingURL=style.css.map */

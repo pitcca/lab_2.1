@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeueCyr-Roman.ttf);
+    font-weight: 400;
+}
+
+body{
+    font-family: HelveticaNeue;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.link{
+    font-size: 16px;
+    line-height: 16px;
+    &_white{
+        color:#FFF;
+    }
+    &_gray{
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.title{
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFF;
+}
+.text{
+    font-size: 24px;
+    line-height: 28px;
+    &_white{
+        color: #FFF;
+    }
+    &_gray{
+        color: #435766;
+    }
+}
+
+.btn{
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFF;
+    border-radius: 4px;
+    &_green{
+        background: #8DD83D;
+    }
+    &_gray{
+        background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    }
+}
+.xbox_1{
+    padding: 0px 165px;
+    height: 60px;
+    &__menu{
+        display: flex;
+    }
+    background: #373A3C;
+    border-radius: 4px;
+    &__wrap{
+        padding: 11px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        height: 29px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item:not(:last-of-type){
+        margin-right: 25px;
+    }
+    &__input{
+        padding: 9px 0px 8px 16px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        &_arrow{
+            &::after{
+                content: '';
+                background: url('../img/down-arrow.svg') no-repeat center center /cover;
+                display: block;
+                height: 7px;
+                width: 12px;
+                margin-left: 7px;
+            }
+        }
+    }
+}
+.star{
+    background: url('../img/Star-Wars-Battlefront-II-combat.jpg') no-repeat center center/cover;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrow{
+        width: 135px;
+        height: 644px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__block{
+        margin: 210px -565px 0px 0px ;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__ghost{
+        height: 95px;
+    }
+    &__btn{
+        padding: 8px 24px 9px 19px;
+        &:not(:last-of-type){
+            margin-right: 13px;
+        }
+    }
+}
+.xbox_2{
+    background: url('../img/Rectangle_2.jpg') no-repeat center center/cover;
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 162px;
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+    }
+    &__texts{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title_center{
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    &__text_center{
+        display: flex;
+        justify-content: center;
+    }
+    &__carts{
+        margin-top: 43px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__cart{
+        background-color: #FFF;
+        width: 318px;
+        height: 418px;
+        border: 1px solid #8DD83D;
+        border-radius: 4px;
+        &_left{
+            width: 279px;
+        }
+        &_hover{
+            width: 350px;
+            height: 460px;
+        }
+    }
+    &__img{
+        &_left{
+            justify-content: flex-start;
+        }
+        &_hover{
+            height: 198px;
+        }
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border-radius: 4px;
+        }
+    }
+    &__preblock{
+        margin-left: 22px;
+    }
+    &__pretitle{
+        margin-top: 22px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__text{
+        margin-top: 13px;
+        margin-bottom: 57px;
+        min-height: 73px;
+    }
+    &__btn{
+        &_left{
+            
+        }
+        &_one{
+            padding: 19px 23px 20px 23px;
+        }
+        &_two{
+            padding: 19px 64px 20px 64px;
+        }
+        &_three{
+            padding: 19px 80px 20px 80px;
+        }
+    }
+
+}
+.games{
+    background: url('../img/Rectangle_1.jpg') no-repeat center center/cover;
+    
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 97px;
+        margin-bottom: 28px;
+        &::after{
+            content: '';
+            background: url('../img/icon-next.svg') no-repeat center center /cover;
+            display: block;
+            height: 21px;
+            width: 21px;
+            margin-left: 435px;
+            align-items: center;
+        }
+    }
+    &__carts{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 69px;
+    }
+    &_cart{
+        margin-left: 30px;
+    }
+    &__btn_cart{
+        padding: 19px 98px 20px 98px;
+    }
+    &__btn_left{
+        padding: 19px 78px 20px 98px;
+    }
+    &__btn_hover{
+        padding: 22px 108px;
+        margin-left: 6px;
+    }
+    &__text{
+        margin-bottom: 70px;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        padding: 11px 47px 21px 47px;
+        margin-bottom: 161px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+}
+.design_lab{
+    background: url('../img/Rectangle_3.jpg') no-repeat center center/cover;
+    &__block{
+        max-width: 533px;
+        margin-left: 100px;
+    }
+    &__title{
+        padding: 114px 0px 9px 0px;
+        justify-content: flex-start;
+    }
+    &__text{
+        margin-bottom: 37px;
+    }
+    &__btns{
+        padding-bottom: 145px;
+    }
+    &__btn{
+        &_one{
+            padding: 20px 31px 19px 52px;
+            margin-right: 15px;
+        }
+        &_two{
+                padding: 20px 23px;
+        }
+    }
+}
+.developers{
+    background: #373A3C;
+    &__row{
+        display: flex;
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        padding: 30px 20px;
+    }
+    &__text{
+        padding: 30px 20px;
+    }
+    &__title{
+        color: #7DD42F;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    &__set{}
+    &_gramm{ 
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+}

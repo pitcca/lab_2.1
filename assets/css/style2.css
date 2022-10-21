@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{  
+    font-family:'Rubik';
+    src: url('../fonts/Rubik-Regular.ttf');
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.regisration{
+    font-family: 'Rubik';
+    height: 594px;
+    width: 568px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    border: 2px solid #363636;
+    margin: 0 auto;
+}
+
+.regisration__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: solid #C4C4C4;
+    padding-right: 220px;
+    
+}
+
+.regisration__subtitle{
+    display: flex;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    align-items: center;
+    
+    color: #474747;
+}
+
+.regisration__subtitle::before{
+    display: block;
+    content:'\00D7';
+    font-size: 25px;
+    margin: 0 220px 0 0;
+}
+
+
+.foundation{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.foundation__wrap{
+
+
+}
+
+.foundation__title{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #363636;  
+    margin-bottom: 22px;  
+}
+
+.regisration__inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.regisration__form__input{
+    background: #FFFFFF;
+    opacity: 0.9;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 56px;
+    padding-left: 14px;
+
+}
+
+.regisration__form__subtext{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9; 
+    margin-bottom: 30px; 
+}
+.regisration__form__link{
+    color:#008C8C;
+}
+
+
+.regisration__welcome{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.regisration__button__text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.regisration__come{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.regisration__networks{
+    display: flex;
+    flex-direction: column;
+}
+
+.regisration__network{
+    
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    opacity: 0.9;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    height: 56px;
+}
+
+.regisration__network__text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #474747;
+    padding-left: 10px;
+}
